@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar {
+    max-width: initial;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-previous {
+    order: 1;
+}
+
+.btn-next {
+    order: 2;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table td {
+    height: 100px;
+    min-width: 40px;
+    max-width: 40px;
+    position: relative;
+}
+
+td:not(:empty):hover {
+    background-color: #f2f2f2;
+}
+
+.day-number {
+    position: absolute;
+    top: 5px; /* Adjust positioning */
+    left: 5px; /* Adjust positioning */
+    font-size: 30px; /* Adjust font size */
+}
+
+.namedays {
+    position: absolute;
+    top: 5px; /* Adjust positioning */
+    right: 5px; /* Adjust positioning */
+    font-size: 14px; /* Adjust font size */
+    text-align: right;
+}
+
+.holiday {
+    padding-top: 20%;
+    padding-right: 50%;
+    max-width: fit-content;
+    color: darkred;
+    font-size: 14px; /* Adjust font size */
+    clear: both; /* Ensure holidays appear below namedays */
+}
+
+.saturday {
+    color: grey;
+}
+
+.sunday {
+    color: red;
+}
+
+.current-day {
+    font-weight: bold;
+    background-color: #83a9e6af;
+}
+
+.selected-day {
+    background-color: lightblue;
+}
+
+.holiday-forms {
+    padding: 20px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex: 1;
+    margin-right: 20px;
+    background-color: white;
+
+}
+
+.form-column:last-child {
+    margin-right: 0;
+}
+
+.holiday-forms form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.holiday-forms input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.holiday-forms input[type="submit"]:hover {
+    background-color: #45a049;
+}

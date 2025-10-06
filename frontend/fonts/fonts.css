@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.holiday {
+    font-size: 14px;
+}
+
+.current-day {
+    font-weight: bold;
+}
+
+.day-number {
+    font-size: 30px;
+}
+
+.namedays {
+    font-size: 14px;
+}
